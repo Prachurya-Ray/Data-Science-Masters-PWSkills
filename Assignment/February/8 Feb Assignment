@@ -1,0 +1,35 @@
+1. What is Abstraction in OOps? Explain with an example.
+
+A- Abstraction is used to hide the internal functionality of the function from the users. The users only interact with the basic implementation of the function, but inner working is hidden. User is familiar with that "what function does" but they don't know "how it does." An abstraction is used to hide the irrelevant data/class in order to reduce the complexity. It also enhances the application efficiency.
+    Abstraction in python is defined as a process of handling complexity by hiding unnecessary information from the user. This is one of the core concepts of object-oriented programming (OOP) languages. That enables the user to implement even more complex logic on top of the provided abstraction without understanding or even thinking about all the hidden background/back-end complexity. Abstraction provides a programmer to hide all the irrelevant data/process of an application in order to reduce complexity and increase the efficiency of the program. 
+Ex- We all use the smartphone and very much familiar with its functions such as camera, voice-recorder, call-dialing, etc., but we don't know how these operations are happening in the background. 
+
+
+2. Differentiate between Abstraction and Encapsulation. Explain with an example.
+
+A- Abstraction is a process of hiding unnecessary data and showing only relevant data. Out of an ocean of data, we are only maintaining the transparency of some data to the user. This important concept in object-oriented programming will reduce the complexity of the code and increases the readability.
+Ex- Consider the motorcycle. A mechanic is attempting to repair your motorcycle or, say, a certain section of your motorcycle. You don’t want to know your motorcycle specifics or what portion has actually broken. You simply want your motor cycle in its original condition without worrying about the details. You told the mechanic what you wanted by separating the implementing part; this is called abstraction.
+
+Encapsulation is binding the data members with member variables. This will avoid the direct access of variables, because direct access of variables may violate privacy, and hiding of the implementation will not be possible. Encapsulation works like a protective wrapper that conceals the code and data within the class. That data and code will be accessed outside the method/member function and the class that is not the members of that class.
+Ex- Only you need to know the device’s behaviour without having to worry about implementing details like what sensors the Keyboard has and whether it is wireless or not etc. Every detail describes the mouse, but it is simply a keyboard, irrespective of the detail. This we called Encapsulation.
+
+
+3. What is abc module in python? Why is it used?
+
+A- The 'abc' module is called as Abstract Base Classes. The 'abc' module in Python library provides the infrastructure for defining custom abstract base classes. 'abc' works by marking methods of the base class as abstract. This is done by @absttractmethod decorator.
+Python provides the abc module to use the abstraction in the Python program, syntax as:
+    from abc import ABC,   
+    class ClassName(ABC):
+To use Python Abstract Base Classes (ABCs), one needs to import ABCMeta and abstractmethod from the abc module.  
+
+
+4. How can we achieve data abstraction?
+
+A- In Python, abstraction can be achieved by having/using abstract classes and methods in our programs. Data Abstraction in Python can be achieved through creating abstract classes and inheriting them later. 
+    An abstract method is a method that is declared, but does not contain implementation.
+    Data Abstraction in Python is the process of hiding the real implementation of an application from the user and emphasizing only on usage of it. Basically, Abstraction focuses on hiding the internal implementations of a process or method from the user. In this way, the user knows what he is doing but not how the work is being done.
+
+5. Can we create an instance of an abstract class? Explain your answer.
+
+A- Abstract Class are the classes that cannot be instantiated. This means that we cannot create objects of an abstract class and these are only meant to be inherited. Then an object of the derived class is used to access the features of the base class. These are specifically defined to lay a foundation of other classes that exhibit common behavior or characteristics.
+    The abstract class is an interface. Interfaces in OOP enable a class to inherit data and functions from a base class by extending it. We can understand that an abstract class just serves as a template for other classes by defining a list of methods that the classes must implement. To use such a class, we must derive them keeping in mind that we would either be using or overriding the features specified in that class.
